@@ -1,1 +1,31 @@
-
+<html>
+  <head>
+    <title>(,)</title>
+    <link rel=stylesheet href=style.css>
+  </head>
+  <body>
+    <script>
+window.onerror = (msg, url, line, col, error) => {
+  alert(error.stack);
+  alert("Error at " + url + " line " + line + " col " + col);
+  alert(msg);
+}
+    </script>
+    <h1>(,)</h1>
+    <button onclick="run()" id=runButton>Run</button>
+    <h3>flags</h3>
+    <input id=flags>
+    <h3>code</h3>
+    <input id=code>
+    <h3>stdin</h3>
+    <input id=stdin>
+    <h3>stdout</h3>
+    <p id=stdout>
+    <h3>stderr</h3>
+    <p id=stderr>
+    <h3>Syntax</h3>
+    (var-to-access,value-to-set,value-to-output-int,value-to-output-char,value-while-greater-than,value-or-equals-first)
+    <br><br>
+    <script src = "script.js"></script>
+  </body>
+</html>
